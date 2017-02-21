@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'survey/css/styles.css' %}"
+    media="screen" title="no title" charset="utf-8">
+    <title>Result</title>
+  </head>
+  <body>
+    <div id="thanks">
+      <h2>Thanks for submitting this form! You have submitted this form
+      {{request.session.counter}} times now!</h2>
+    </div>
+    <div class="wrapper2">
+      <h1>Submitted Info</h1>
+      <div id="info">
+        <div id="nambox">Your Name:{{request.session.firstname}} </div>
+        <div id="locobox">Dojo Location:{{request.session.location}} </div>
+        <div id="langbox">Favorite Language:{{request.session.language}}  </div>
+        <div id="combox">Comment (optional):{{request.session.com}} </div>
+      </div>
+    </div>
+  </body>
+</html>

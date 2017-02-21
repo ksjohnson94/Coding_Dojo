@@ -1,0 +1,9 @@
+.wrapper{
+  background-color: gray;
+  margin: auto;
+}
+
+#addcourse{
+  border: 5px;
+  border-color: black;
+}

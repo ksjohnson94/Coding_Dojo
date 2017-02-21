@@ -1,0 +1,54 @@
+<!-- <h1>Events#index</h1>
+<p>Find me in app/views/events/index.html.erb</p> -->
+<title>Events Dashboad</title>
+<h2>Welcome <%= session[:user] %>!</h2>
+<h4>Here are some of the events at your state.</h4>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Host</th>
+    <!-- <th>action</th> -->
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>date</td>
+    <td>location</td>
+    <td>user_id[:first_name]</td>
+    <!-- <td>action</td> -->
+  </tr>
+</table>
+<h5>Here are some of the events in other states.</h5>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Host</th>
+    <!-- <th>action</th> -->
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>date</td>
+    <td>location</td>
+    <td>host[:first_name]</td>
+    <!-- <td>action</td> -->
+  </tr>
+</table>
+<form class="" action="/events/add" method="post">
+  <fieldset>
+    <br>
+    Name: <input type="text" name="name" value="@name"><br>
+    <br>
+    Date: <input type="integer" name="date" value="@date"><br>
+    <br>
+    Location: <input type="text" name="location" value="@location"><br>
+    <br>
+    <select class="" name="@state">
+      <option value=""></option>
+
+    </select>
+
+  </fieldset>
+</form>

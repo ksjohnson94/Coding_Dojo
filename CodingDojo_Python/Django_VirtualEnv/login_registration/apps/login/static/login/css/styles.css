@@ -1,0 +1,24 @@
+*{
+  margin: auto;
+  width: auto;
+  color: lime;
+}
+
+.wrapper{
+  margin: auto;
+  background-color: blue;
+
+}
+
+.reg {
+  margin: auto;
+  background-color: red;
+  position: absolute;
+}
+
+.log{
+  margin: auto;
+  width: auto;
+  background-color: yellow;
+
+}

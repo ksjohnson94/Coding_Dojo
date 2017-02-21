@@ -1,0 +1,20 @@
+<form class="" action="/create" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  Your Name:
+  <input type="text" name="name" value="">
+  Dojo Location:
+  <select class="" name="location">
+    <option name="location">Sea</option>
+    <option  name="location">bell</option>
+    <option name="location">tuk</option>
+  </select>
+  Favorite Language:
+  <select class="" name="language">
+    <option name="language">js</option>
+    <option name="language">rb</option>
+    <option name="language">py</option>
+  </select>
+  Comment (optional):
+  <textarea name="comment" rows="3" cols="50"></textarea>
+  <button type="submit" name="submit">submit</button>
+</form>
